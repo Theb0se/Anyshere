@@ -1,0 +1,74 @@
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.inputbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 64px;
+  background: #ffffff;
+  box-shadow: 5px 5px 60px 15px rgba(30, 119, 204, 0.1);
+  border-radius: 24px;
+  width: 600px;
+  height: fit-content;
+}
+
+.fileInput {
+  border: 2px dashed #000;
+  width: 100%;
+  height: 100%;
+  padding: 30px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.shereDone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  background: #ffffff;
+  box-shadow: 5px 5px 60px 15px rgba(30, 119, 204, 0.1);
+  border-radius: 24px;
+  width: 600px;
+  height: fit-content;
+}
+
+.copy {
+  border: 1px solid #4e4e4e;
+  width: 100%;
+  border-radius: 5px;
+  padding: 4px 10px;
+  color: #000;
+  text-decoration: none;
+  white-space: initial;
+  word-wrap: break-word;
+}
+
+@media screen and (max-width: 676px) {
+  .inputbox,
+  .shereDone {
+    width: 95vw;
+    max-width: 95vw;
+  }
+}
