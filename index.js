@@ -13,7 +13,7 @@ app.use(express.static(__dirname + "/public"));
 
 const upload = multer({ dest: "uploads" });
 
-const port = 8080;
+const port = process.env.PORT || 3000;
 
 app.get("/", (req, res) => res.render("index", { filelink: null }));
 
